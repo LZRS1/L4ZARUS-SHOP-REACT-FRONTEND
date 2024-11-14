@@ -7,7 +7,7 @@ export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
 
-    const currency = 'USD';
+    const currency = 'MXN';
     const delivery_fee = 1;
     const backendUrl = import.meta.env.VITE_BACKEND_URL
     const [search, setSearch] = useState('');
@@ -21,7 +21,7 @@ const ShopContextProvider = (props) => {
     const addToCart = async (itemId, size) => {
 
         if (!size) {
-            toast.error('Seleccione el tamaño del producto');
+            toast.error('Select Product Size');
             return;
         }
 
@@ -152,7 +152,7 @@ const ShopContextProvider = (props) => {
     }, [token])
 
     const value = {
-        products, currency, 
+        products, currency, delivery_fee,
         search, setSearch, showSearch, setShowSearch,
         cartItems, addToCart,setCartItems,
         getCartCount, updateQuantity,
