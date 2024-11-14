@@ -61,19 +61,19 @@ const Product = () => {
           <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
           <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
           <div className='flex flex-col gap-4 my-8'>
-              <p>Select Size</p>
+              <p>Seleccionar tipo:</p>
               <div className='flex gap-2'>
                 {productData.sizes.map((item,index)=>(
                   <button onClick={()=>setSize(item)} className={`border py-2 px-4 bg-gray-100 ${item === size ? 'border-orange-500' : ''}`} key={index}>{item}</button>
                 ))}
               </div>
           </div>
-          <button onClick={()=>addToCart(productData._id,size)} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>ADD TO CART</button>
+          <button onClick={()=>addToCart(productData._id,size)} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>AÑADIR A LA CESTA</button>
           <hr className='mt-8 sm:w-4/5' />
           <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
-              <p>100% Original product.</p>
-              <p>Cash on delivery is available on this product.</p>
-              <p>Easy return and exchange policy within 7 days.</p>
+              <p>Producto 100% Original.</p>
+              <p>El pago contra reembolso está disponible para este producto.</p>
+              <p>Política de cambio fácil.</p>
           </div>
         </div>
       </div>
@@ -81,12 +81,12 @@ const Product = () => {
       {/* ---------- Description & Review Section ------------- */}
       <div className='mt-20'>
         <div className='flex'>
-          <b className='border px-5 py-3 text-sm'>Description</b>
-          <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
+          <b className='border px-5 py-3 text-sm'>Descripción:</b>
+          <p className='border px-5 py-3 text-sm'>Reseñas (122)</p>
         </div>
         <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-          <p>An e-commerce website is an online platform that facilitates the buying and selling of products or services over the internet. It serves as a virtual marketplace where businesses and individuals can showcase their products, interact with customers, and conduct transactions without the need for a physical presence. E-commerce websites have gained immense popularity due to their convenience, accessibility, and the global reach they offer.</p>
-          <p>E-commerce websites typically display products or services along with detailed descriptions, images, prices, and any available variations (e.g., sizes, colors). Each product usually has its own dedicated page with relevant information.</p>
+          <p>Un sitio web de comercio electrónico es una plataforma en línea que facilita la compra y venta de productos o servicios a través de Internet. Sirve como un mercado virtual donde empresas e individuos pueden exhibir sus productos, interactuar con clientes y realizar transacciones sin necesidad de presencia física. Los sitios web de comercio electrónico han ganado una inmensa popularidad debido a su conveniencia, accesibilidad y alcance global que ofrecen.</p>
+          <p>Los sitios web de comercio electrónico suelen mostrar productos o servicios junto con descripciones detalladas, imágenes, precios y cualquier variación disponible (por ejemplo, tamaños, colores). Cada producto suele tener su propia página dedicada con información relevante.</p>
         </div>
       </div>
 

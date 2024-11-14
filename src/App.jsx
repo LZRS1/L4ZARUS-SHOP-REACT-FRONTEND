@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import Collection from './pages/Collection'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Delivery from './pages/Delivery'
+import Privacy from './pages/Privacy'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Login from './pages/Login'
@@ -33,6 +35,9 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/verify' element={<Verify />} />
+        <Route path='/delivery' element={<Delivery />} />
+        <Route path='/privacy' element={<Privacy />} />
+
       </Routes>
       <Footer />
     </div>

@@ -9,25 +9,25 @@ const Footer = () => {
         <div>
             <img src={assets.logo} className='mb-5 w-32' alt="" />
             <p className='w-full md:w-2/3 text-gray-600'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            L4ZARUS CORP ES UNA TIENDA DEDICADA A VENDER PRODUCTOS DIGITALES COMO JUEGOS, SOFTWARE, APLICACIONES, LICENCIAS Y CODIGOS A UN PRECIO MAS BAJO QUE EL DE LAS EMPRESAS COMUNES, POR EJEMPLO, SPOTIFY A MITAD DE PRECIO Y MUCHO MAS.
             </p>
         </div>
 
         <div>
-            <p className='text-xl font-medium mb-5'>COMPANY</p>
+            <p className='text-xl font-medium mb-5'>COMPAÑÍA</p>
             <ul className='flex flex-col gap-1 text-gray-600'>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Delivery</li>
-                <li>Privacy policy</li>
+                <li> <a href="/">Inicios</a> </li>
+                <li> <a href="/about">Sobre nosotros</a> </li>
+                <li> <a href="/delivery">Entrega</a> </li>
+                <li> <a href="/privacy">Politica de privacidad</a> </li>
             </ul>
         </div>
 
         <div>
-            <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+            <p className='text-xl font-medium mb-5'>PONTE EN CONTACTO</p>
             <ul className='flex flex-col gap-1 text-gray-600'>
-                <li>+1-212-456-7890</li>
-                <li>contact@foreveryou.com</li>
+                <li>+52 55-2069-2985</li>
+                <li>l4zarus@l4zarus.com</li>
             </ul>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div>
             <hr />
-            <p className='py-5 text-sm text-center'>Copyright 2024@ forever.com - All Right Reserved.</p>
+            <p className='py-5 text-sm text-center'>Copyright 2024@ l4zarus.com - All Right Reserved.</p>
         </div>
 
     </div>
