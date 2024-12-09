@@ -4,27 +4,100 @@
 @tailwind components;
 @tailwind utilities;
 
-a.active hr{
-    display: block;
+body {
+background-color:#000000;
 }
 
-*{
-    font-family: Outfit;
+* {
+    font-family: Outfit, sans-serif;
 }
 
 .prata-regular {
     font-family: "Prata", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  ::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
-  }
-  
-  @media (max-width:640px) {
-    a.active{
-        background-color: black;
-        color: white;
+}
+
+/* Gradiente de texto animado */
+.gradient-text {
+    background: linear-gradient(90deg, #E92E29, #fcc60e);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+.gradient-text2 {
+  background: linear-gradient(90deg, #00ff37, #00ff62);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+.gradient-text3 {
+  background: linear-gradient(90deg, #afafaf, #5a5a5a);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+/* Gradiente de borde animado */
+.gradient-border {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #E92E29, #fcc60e) 1;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+/* Gradiente animado en líneas */
+.gradient-line {
+    background: linear-gradient(90deg, #E92E29, #fcc60e);
+    background-size: 200% 200%;
+    height: 2px;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+/* Gradiente en íconos */
+.gradient-icon {
+    background: linear-gradient(90deg, #E92E29, #fcc60e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+/* Animación del gradiente */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
     }
-  }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fondo negro */
+.bg-dark {
+    background-color: #000000;
+}
+
+
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.animated-gradients {
+    background: linear-gradient(90deg, #afafaf, #5a5a5a);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
+}
+

@@ -1,23 +1,22 @@
-import logo from './logo.png'
-import hero_img from './hero_img.png'
-import cart_icon from './cart_icon.png'
-import bin_icon from './bin_icon.png'
-import dropdown_icon from './dropdown_icon.png'
-import exchange_icon from './exchange_icon.png'
-import profile_icon from './profile_icon.png'
-import quality_icon from './quality_icon.png'
-import search_icon from './search_icon.png'
-import star_dull_icon from './star_dull_icon.png'
-import star_icon from './star_icon.png'
-import support_img from './support_img.png'
-import menu_icon from './menu_icon.png'
-import about_img from './about_img.png'
-import contact_img from './logoo.png'
+import logo from './l.svg'
+import hero_img from './header.svg'
+import cart_icon from './carro.svg'
+import bin_icon from './basura.svg'
+import dropdown_icon from './flecha-derecha.svg'
+import exchange_icon from './cambio.svg'
+import profile_icon from './perfil.svg'
+import search_icon from './buscar.svg'
+import star_dull_icon from './star.svg'
+import star_icon from './star.svg'
+import support_img from './24-7.svg'
+import menu_icon from './menu.svg'
+import contact_img from './sobre-nosotros.svg'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
-import cross_icon from './cross_icon.png'
-import expres from './EXPRESS.png'
-import privacy from './privacy.png'
+import cross_icon from './tache.svg'
+import expres from './entrega.svg'
+import privacy from './privacidad.svg'
+import contacto from './contacto.svg'
 
 export const assets = {
     privacy,
@@ -28,18 +27,17 @@ export const assets = {
     dropdown_icon,
     exchange_icon,
     profile_icon,
-    quality_icon,
     search_icon,
     star_dull_icon,
     star_icon,
     bin_icon,
     support_img,
     menu_icon,
-    about_img,
     contact_img,
     razorpay_logo,
     stripe_logo,
-    cross_icon
+    cross_icon,
+    contacto
 }
 
 export const products = [

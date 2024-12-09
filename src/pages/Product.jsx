@@ -49,30 +49,28 @@ const Product = () => {
 
         {/* -------- Product Info ---------- */}
         <div className='flex-1'>
-          <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
+          <h1 className='font-medium text-2xl mt-2 gradient-text'>{productData.name}</h1>
           <div className=' flex items-center gap-1 mt-2'>
               <img src={assets.star_icon} alt="" className="w-3 5" />
               <img src={assets.star_icon} alt="" className="w-3 5" />
               <img src={assets.star_icon} alt="" className="w-3 5" />
               <img src={assets.star_icon} alt="" className="w-3 5" />
               <img src={assets.star_dull_icon} alt="" className="w-3 5" />
-              <p className='pl-2'>(122)</p>
+              <p className='pl-2 gradient-text'>(5+)</p>
           </div>
-          <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
-          <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
+          <p className='mt-5 text-3xl font-medium gradient-text2'>{currency}{productData.price}</p>
           <div className='flex flex-col gap-4 my-8'>
-              <p>Seleccionar tipo:</p>
+              <p className='gradient-text'>Seleccionar tipo:</p>
               <div className='flex gap-2'>
                 {productData.sizes.map((item,index)=>(
-                  <button onClick={()=>setSize(item)} className={`border py-2 px-4 bg-gray-100 ${item === size ? 'border-orange-500' : ''}`} key={index}>{item}</button>
+                  <button onClick={()=>setSize(item)} className={`border py-2 px-4 animated-gradients ${item === size ? 'gradient-border' : ''}`} key={index}>{item}</button>
                 ))}
               </div>
           </div>
-          <button onClick={()=>addToCart(productData._id,size)} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>AÑADIR A LA CESTA</button>
+          <button onClick={()=>addToCart(productData._id,size)} className='animated-gradients text-white px-8 py-3 text-sm active:bg-gray-700'>AÑADIR A LA CESTA</button>
           <hr className='mt-8 sm:w-4/5' />
-          <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
+          <div className='text-sm gradient-text3 mt-5 flex flex-col gap-1'>
               <p>Producto 100% Original.</p>
-              <p>El pago contra reembolso está disponible para este producto.</p>
               <p>Política de cambio fácil.</p>
           </div>
         </div>
@@ -81,12 +79,10 @@ const Product = () => {
       {/* ---------- Description & Review Section ------------- */}
       <div className='mt-20'>
         <div className='flex'>
-          <b className='border px-5 py-3 text-sm'>Descripción:</b>
-          <p className='border px-5 py-3 text-sm'>Reseñas (122)</p>
+          <b className='animated-gradients gradient-border px-5 py-3 text-sm'>Descripción:</b>
         </div>
-        <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-          <p>Un sitio web de comercio electrónico es una plataforma en línea que facilita la compra y venta de productos o servicios a través de Internet. Sirve como un mercado virtual donde empresas e individuos pueden exhibir sus productos, interactuar con clientes y realizar transacciones sin necesidad de presencia física. Los sitios web de comercio electrónico han ganado una inmensa popularidad debido a su conveniencia, accesibilidad y alcance global que ofrecen.</p>
-          <p>Los sitios web de comercio electrónico suelen mostrar productos o servicios junto con descripciones detalladas, imágenes, precios y cualquier variación disponible (por ejemplo, tamaños, colores). Cada producto suele tener su propia página dedicada con información relevante.</p>
+        <div className='flex flex-col gap-4 gradient-border px-6 py-6 text-sm text-gray-500'>
+          <p>{productData.description}</p>
         </div>
       </div>
 

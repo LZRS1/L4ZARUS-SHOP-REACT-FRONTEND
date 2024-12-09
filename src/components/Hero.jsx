@@ -3,23 +3,23 @@ import { assets } from '../assets/assets'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col sm:flex-row border border-gray-400'>
+    <div className='flex flex-col sm:flex-row  border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 gradient-border'>
       {/* Hero Left Side */}
       <div className='w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0'>
             <div className='text-[#414141]'>
                 <div className='flex items-center gap-2'>
-                    <p className='w-8 md:w-11 h-[2px] bg-[#414141]'></p>
-                    <p className=' font-medium text-sm md:text-base'>NUESTRO PRODUCTO</p>
+                    <p className='w-8 md:w-11 h-[2px] animated-gradients'></p>
+                    <p className=' font-medium text-sm md:text-base gradient-text3'>NUESTRO PRODUCTO</p>
                 </div>
-                <h1 className='prata-regular text-3xl sm:py-3 lg:text-5xl leading-relaxed'>MAS VENDIDO</h1>
+                <h1 className='prata-regular text-3xl sm:py-3 lg:text-5xl leading-relaxed gradient-text'>MAS VENDIDO</h1>
                 <div className='flex items-center gap-2'>
-                    <p className='font-semibold text-sm md:text-base'>COMPRA AHORA</p>
-                    <p className='w-8 md:w-11 h-[1px] bg-[#414141]'></p>
+                    <p className='font-semibold text-sm md:text-base gradient-text3'>COMPRA AHORA</p>
+                    <p className='w-8 md:w-11 h-[2px] animated-gradients'></p>
                 </div>
             </div>
       </div>
       {/* Hero Right Side */}
-      <img className='w-full sm:w-1/2' src={assets.hero_img} alt="" />
+      <img width="100" height="100" className='w-full sm:w-1/2' src={assets.hero_img} alt="" />
     </div>
   )
 }

@@ -1,0 +1,8 @@
+<svg id="fi_4468321" height="100" viewBox="0 0 8.4666665 8.4666669" width="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradientAnimation" x1="0%" y1="0%" x2="100%" y2="0%">
+        <animate attributeName="stop-color" values="#ff0000;#ff7f00;#ff0000" dur="3s" repeatCount="indefinite" />
+
+    </linearGradient>
+  </defs>
+</svg>
